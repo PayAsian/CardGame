@@ -12,6 +12,8 @@
 		192B58721DBFE3F9008A4B2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 192B58701DBFE3F9008A4B2C /* Main.storyboard */; };
 		192B58741DBFE3F9008A4B2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 192B58731DBFE3F9008A4B2C /* Assets.xcassets */; };
 		192B58771DBFE3F9008A4B2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 192B58751DBFE3F9008A4B2C /* LaunchScreen.storyboard */; };
+		192B58811DBFE622008A4B2C /* PlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192B58801DBFE622008A4B2C /* PlayingCard.swift */; };
+		192B58831DBFE64E008A4B2C /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192B58821DBFE64E008A4B2C /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,9 +21,11 @@
 		192B586C1DBFE3F9008A4B2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		192B586E1DBFE3F9008A4B2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		192B58711DBFE3F9008A4B2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		192B58731DBFE3F9008A4B2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		192B58731DBFE3F9008A4B2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = CardGame/Assets.xcassets; sourceTree = "<group>"; };
 		192B58761DBFE3F9008A4B2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		192B58781DBFE3F9008A4B2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		192B58801DBFE622008A4B2C /* PlayingCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayingCard.swift; path = Model/PlayingCard.swift; sourceTree = "<group>"; };
+		192B58821DBFE64E008A4B2C /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +60,31 @@
 			children = (
 				192B586C1DBFE3F9008A4B2C /* AppDelegate.swift */,
 				192B586E1DBFE3F9008A4B2C /* ViewController.swift */,
+				192B58781DBFE3F9008A4B2C /* Info.plist */,
+				192B58851DBFE6EE008A4B2C /* Controller */,
+				192B58841DBFE666008A4B2C /* Model */,
+			);
+			path = CardGame;
+			sourceTree = "<group>";
+		};
+		192B58841DBFE666008A4B2C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				192B58801DBFE622008A4B2C /* PlayingCard.swift */,
+				192B58821DBFE64E008A4B2C /* Card.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		192B58851DBFE6EE008A4B2C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				192B58701DBFE3F9008A4B2C /* Main.storyboard */,
 				192B58731DBFE3F9008A4B2C /* Assets.xcassets */,
 				192B58751DBFE3F9008A4B2C /* LaunchScreen.storyboard */,
-				192B58781DBFE3F9008A4B2C /* Info.plist */,
 			);
-			path = CardGame;
+			name = Controller;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +159,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				192B586F1DBFE3F9008A4B2C /* ViewController.swift in Sources */,
+				192B58811DBFE622008A4B2C /* PlayingCard.swift in Sources */,
 				192B586D1DBFE3F9008A4B2C /* AppDelegate.swift in Sources */,
+				192B58831DBFE64E008A4B2C /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +174,7 @@
 				192B58711DBFE3F9008A4B2C /* Base */,
 			);
 			name = Main.storyboard;
+			path = CardGame;
 			sourceTree = "<group>";
 		};
 		192B58751DBFE3F9008A4B2C /* LaunchScreen.storyboard */ = {
@@ -157,6 +183,7 @@
 				192B58761DBFE3F9008A4B2C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = CardGame;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
