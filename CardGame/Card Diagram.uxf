@@ -60,6 +60,7 @@ bg=Blue
 + getSuit(): String
 + getColor(); UIColor
 +init(): Initializer
++init(withRank:Int, ofSuit.String)
 + toString(): String
 bg=Red</panel_attributes>
     <additional_attributes/>
