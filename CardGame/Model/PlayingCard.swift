@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PlaingCard : Card
+class PlayingCard : Card
 {
     private var rank : Int
         {
