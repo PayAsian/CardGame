@@ -10,7 +10,7 @@ import UIKit
 
 class PlayingCard : Card
 {
-    private var rank : Int
+    internal var rank : Int
         {
         get
         {
@@ -23,7 +23,7 @@ class PlayingCard : Card
     }
     
 
-    private var suit : String
+    internal var suit : String
     {
         get
         {
