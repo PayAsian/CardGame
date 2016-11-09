@@ -29,7 +29,7 @@ class PlayingCardDeck : Deck
                 }
         }
     
-}
+
 
 func shuffleDeck() -> Void
 {
@@ -42,7 +42,7 @@ func shuffleDeck() -> Void
 }
 
 
-
+    }
 }
 
 
