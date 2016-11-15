@@ -153,4 +153,32 @@ m2=n
 </panel_attributes>
     <additional_attributes>10.0;20.0;210.0;20.0</additional_attributes>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1050</x>
+      <y>480</y>
+      <w>370</w>
+      <h>400</h>
+    </coordinates>
+    <panel_attributes>StupidGame.Model
+--
+
+--
++Check if color and/or suit matches()
++
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>750</y>
+      <w>650</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;630.0;80.0</additional_attributes>
+  </element>
 </diagram>

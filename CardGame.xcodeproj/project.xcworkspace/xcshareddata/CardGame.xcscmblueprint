@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "31AD68550DBC99A04287E917E2C356132CE2DBF7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "31AD68550DBC99A04287E917E2C356132CE2DBF7" : 0,
+    "921C9F7AC5C7F6E8B3A5520CC4B8BDC01BD7B792" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8B4A9D01-C2C7-4A66-908B-52A6DA9B1A54",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "31AD68550DBC99A04287E917E2C356132CE2DBF7" : "CardGame\/",
+    "921C9F7AC5C7F6E8B3A5520CC4B8BDC01BD7B792" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CardGame",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "CardGame.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/PayAsian\/CardGame.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "31AD68550DBC99A04287E917E2C356132CE2DBF7"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/PayAsian\/MyIosProject.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "921C9F7AC5C7F6E8B3A5520CC4B8BDC01BD7B792"
+    }
+  ]
+}
