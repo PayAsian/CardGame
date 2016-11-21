@@ -6,27 +6,17 @@
 //  Copyright © 2016 Trevino, Peyton. All rights reserved.
 //
 
-import UIKit
+
 
 class Card
 {
-    internal var backImage : UIImage
+    
     internal var isFaceUp : Bool
     
     init()
     {
-        backImage = UIImage(named: "cardback")!
+        
         isFaceUp = false
-    }
-    
-    func setBackImage(backImage : UIImage)
-    {
-        self.backImage = backImage
-    }
-   
-    func getBackImage() -> UIImage
-    {
-        return backImage
     }
     
     func setFacing(isFaceUp : Bool)
@@ -42,7 +32,7 @@ class Card
     
     func toString () -> String
     {
-        let description = "This caris \(isFaceUp)"
+        let description = "This card is \(isFaceUp)"
         
         return description
         
