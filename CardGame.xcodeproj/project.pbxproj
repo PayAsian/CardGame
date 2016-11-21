@@ -15,6 +15,7 @@
 		192B58831DBFE64E008A4B2C /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192B58821DBFE64E008A4B2C /* Card.swift */; };
 		195674521DC27DBD0058DFC8 /* CardGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195674511DC27DBD0058DFC8 /* CardGameController.swift */; };
 		196869191DD657060060A8E1 /* StupidGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196869181DD657060060A8E1 /* StupidGame.swift */; };
+		197CF0861DE38D6A00B285AB /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197CF0851DE38D6A00B285AB /* CardView.swift */; };
 		197D40B91DC7C4670011E9D5 /* PlayingCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197D40B81DC7C4670011E9D5 /* PlayingCardDeck.swift */; };
 		197D40BB1DC7C4750011E9D5 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197D40BA1DC7C4750011E9D5 /* Deck.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		192B58821DBFE64E008A4B2C /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		195674511DC27DBD0058DFC8 /* CardGameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardGameController.swift; path = CardGame/Controller/CardGameController.swift; sourceTree = "<group>"; };
 		196869181DD657060060A8E1 /* StupidGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StupidGame.swift; path = Model/StupidGame.swift; sourceTree = "<group>"; };
+		197CF0851DE38D6A00B285AB /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardView.swift; path = View/CardView.swift; sourceTree = "<group>"; };
 		197D40B81DC7C4670011E9D5 /* PlayingCardDeck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayingCardDeck.swift; path = Model/PlayingCardDeck.swift; sourceTree = "<group>"; };
 		197D40BA1DC7C4750011E9D5 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Deck.swift; path = Model/Deck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +102,7 @@
 				192B58731DBFE3F9008A4B2C /* Assets.xcassets */,
 				192B58751DBFE3F9008A4B2C /* LaunchScreen.storyboard */,
 				192B58781DBFE3F9008A4B2C /* Info.plist */,
+				197CF0851DE38D6A00B285AB /* CardView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				197D40B91DC7C4670011E9D5 /* PlayingCardDeck.swift in Sources */,
 				196869191DD657060060A8E1 /* StupidGame.swift in Sources */,
 				192B58831DBFE64E008A4B2C /* Card.swift in Sources */,
+				197CF0861DE38D6A00B285AB /* CardView.swift in Sources */,
 				195674521DC27DBD0058DFC8 /* CardGameController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
