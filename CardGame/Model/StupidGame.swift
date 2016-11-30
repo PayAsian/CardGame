@@ -14,36 +14,66 @@ class StupidGame
     //Delaration section
     //internal var nameOfVariable : Type
     internal var gameDeck : PlayingCardDeck
-    internal var CardDeck1 : Deck
-    internal var CardDeck2 : Deck
-    internal var Card1 : PlayingCard
-    internal var Card2 : PlayingCard
+    internal var hand1 : [PlayingCard]
+    internal var hand2 : [PlayingCard]
+    internal var cardDeck : Deck
+    internal var score : Int
     
     //inits
     init()
     {
-        gameDeck = PlayingCardDeck()
-        CardDeck1 = Deck()
-        CardDeck2 = Deck()
-        Card1 = PlayingCard()
-        Card2 = PlayingCard()
+        self.gameDeck = PlayingCardDeck()
+        self.hand1 = [PlayingCard]()
+        self.hand2 = [PlayingCard]()
+        self.cardDeck = Deck()
+        self.score = Int(0)
+       
     }
     
     
     //Methods
     func startGame() -> Void
     {
-        if let Card1 = CardDeck1.drawRandomCard()as? PlayingCard
-        {
-            
-        }
-        
-        
-        
+        gameDeck.shuffleDeck()
+        drawCards()
         
     }
     
+    private func drawCards() -> Void
+    {
+        hand1.append((gameDeck.drawCard() as? PlayingCard)!)
+        hand2.append((gameDeck.drawCard() as? PlayingCard)!)
+    }
     
+    func checkmatch() -> Bool
+    {
+        let hasMatch :Bool
+        if(hand1[0].suit == hand2[1].suit)
+        {
+            hasMatch = false
+        }
+        else
+        {
+            hasMatch = false
+        }
+        return hasMatch
+        
+    }
+    
+    func playGame() -> Void
+    {
+        if hand1[0].suit == hand2[1].suit
+        {
+            score += 1
+        }
+        else
+        {
+            score += 0
+        }
+        hand1.removeAtIndex(0)
+        hand2.removeAtIndex(0)
+        drawCards()
+    }
     
 
 }
