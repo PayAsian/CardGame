@@ -14,20 +14,19 @@ class StupidGame
     //Delaration section
     //internal var nameOfVariable : Type
     internal var gameDeck : PlayingCardDeck
-    internal var hand1 : [PlayingCard]
-    internal var hand2 : [PlayingCard]
+    internal var hand : [PlayingCard]
     internal var cardDeck : Deck
     internal var score : Int
+    let Joker = PlayingCard()
     
     //inits
     init()
     {
         self.gameDeck = PlayingCardDeck()
-        self.hand1 = [PlayingCard]()
-        self.hand2 = [PlayingCard]()
+        self.hand = [PlayingCard]()
         self.cardDeck = Deck()
         self.score = Int(0)
-       
+        
     }
     
     
@@ -41,14 +40,19 @@ class StupidGame
     
     private func drawCards() -> Void
     {
-        hand1.append((gameDeck.drawCard() as? PlayingCard)!)
-        hand2.append((gameDeck.drawCard() as? PlayingCard)!)
+        hand.append((gameDeck.drawCard() as? PlayingCard)!)
+        hand.append((gameDeck.drawCard() as? PlayingCard)!)
+        hand.append((gameDeck.drawCard() as? PlayingCard)!)
+        hand.append((gameDeck.drawCard() as? PlayingCard)!)
+        hand.append((gameDeck.drawCard() as? PlayingCard)!)
+        
+        
     }
     
     func checkmatch() -> Bool
     {
         let hasMatch :Bool
-        if(hand1[0].suit == hand2[1].suit)
+        if(hand[0].suit == hand[1].color)
         {
             hasMatch = false
         }
@@ -62,7 +66,7 @@ class StupidGame
     
     func playGame() -> Void
     {
-        if hand1[0].suit == hand2[1].suit
+        if hand[0].suit == hand[1].color
         {
             score += 1
         }
@@ -70,8 +74,7 @@ class StupidGame
         {
             score += 0
         }
-        hand1.removeAtIndex(0)
-        hand2.removeAtIndex(0)
+        hand.removeAtIndex(0)
         drawCards()
     }
     
