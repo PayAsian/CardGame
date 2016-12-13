@@ -36,9 +36,9 @@ func orderDeck() -> Void
     {
         for var rank = 1; rank <= PlayingCard.maxRank(); rank += 1
         {
-            let index = cards.indexOf(
-                {($0 as! PlayingCard).suit == suit && ($0 as! PlayingCard).rank == rank})
-            let tempCard = cards.removeAtIndex(index!) as! PlayingCard
+            let index = cards.index(
+                where: {($0 as! PlayingCard).suit == suit && ($0 as! PlayingCard).rank == rank})
+            let tempCard = cards.remove(at: index!) as! PlayingCard
             temp.append(tempCard)
         }
     }

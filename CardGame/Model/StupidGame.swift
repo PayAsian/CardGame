@@ -74,7 +74,7 @@ class StupidGame
         {
             score += 0
         }
-        hand.removeAtIndex(0)
+        hand.remove(at: 0)
         drawCards()
     }
     

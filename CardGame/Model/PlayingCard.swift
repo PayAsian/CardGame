@@ -19,7 +19,7 @@ class PlayingCard : Card
         
         rank = 0
         suit = ""
-        color = UIColor.redColor()
+        color = UIColor.red
         super.init()
         
     }
@@ -28,7 +28,7 @@ class PlayingCard : Card
     {
         rank = withRank
         suit = ofSuit
-        color = UIColor.redColor()
+        color = UIColor.red
         super.init()
     }
     
