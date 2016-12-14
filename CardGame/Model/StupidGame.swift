@@ -14,10 +14,10 @@ class StupidGame
     //Delaration section
     //internal var nameOfVariable : Type
     internal var gameDeck : PlayingCardDeck
+    internal var tempDeck1:
     internal var hand : [PlayingCard]
     internal var cardDeck : Deck
-    internal var score : Int
-    let Joker = PlayingCard()
+    let OldMaid = PlayingCard()
     
     //inits
     init()
@@ -25,7 +25,6 @@ class StupidGame
         self.gameDeck = PlayingCardDeck()
         self.hand = [PlayingCard]()
         self.cardDeck = Deck()
-        self.score = Int(0)
         
     }
     
@@ -52,7 +51,7 @@ class StupidGame
     func checkmatch() -> Bool
     {
         let hasMatch :Bool
-        if(hand[0].suit == hand[1].color)
+        if(hand[0].rank == hand[1].color)
         {
             hasMatch = false
         }
@@ -66,15 +65,7 @@ class StupidGame
     
     func playGame() -> Void
     {
-        if hand[0].suit == hand[1].color
-        {
-            score += 1
-        }
-        else
-        {
-            score += 0
-        }
-        hand.remove(at: 0)
+               hand.remove(at: 0)
         drawCards()
     }
     
